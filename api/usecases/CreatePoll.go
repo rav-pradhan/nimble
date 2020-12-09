@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"github.com/rav-pradhan/pollr/api/domain"
-	"github.com/rav-pradhan/pollr/api/gateway"
+	"github.com/rav-pradhan/nimble/api/domain"
+	"github.com/rav-pradhan/nimble/api/gateway"
 	"gopkg.in/validator.v2"
 )
 

@@ -3,8 +3,8 @@ package usecases_test
 import (
 	"testing"
 
-	"github.com/rav-pradhan/pollr/api/domain"
-	"github.com/rav-pradhan/pollr/api/usecases"
+	"github.com/rav-pradhan/nimble/api/domain"
+	"github.com/rav-pradhan/nimble/api/usecases"
 )
 
 func TestCreatePoll(t *testing.T) {

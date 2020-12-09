@@ -1,4 +1,4 @@
-module github.com/rav-pradhan/pollr/api
+module github.com/rav-pradhan/nimble/api
 
 go 1.15
 

@@ -1,7 +1,7 @@
 package usecases
 
 import (
-	"github.com/rav-pradhan/pollr/api/domain"
+	"github.com/rav-pradhan/nimble/api/domain"
 )
 
 func AddRespondentToAPoll(request domain.CreateRespondentRequest, pollID string) error {
