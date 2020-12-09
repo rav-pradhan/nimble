@@ -10,10 +10,11 @@ import (
 func TestCreatePoll(t *testing.T) {
 	t.Run("An invalid CreatePollRequest returns an error at the validation stage", func(t *testing.T) {
 		request := domain.CreatePollRequest{
-			Name:        "",
-			Description: "This is optional.",
-			Options:     []string{},
-			Creator:     "",
+			Name:                    "",
+			Description:             "This is optional.",
+			AllowMultipleSelections: false,
+			Options:                 []string{},
+			Creator:                 "",
 		}
 		result := usecases.CreatePoll(request, nil)
 		if result == nil {
@@ -22,8 +23,9 @@ func TestCreatePoll(t *testing.T) {
 	})
 	t.Run("A valid CreatePollRequest means the datastore CreatePoll method is called", func(t *testing.T) {
 		request := domain.CreatePollRequest{
-			Name:        "What to watch",
-			Description: "Let's work out what to watch next",
+			Name:                    "What to watch",
+			Description:             "Let's work out what to watch next",
+			AllowMultipleSelections: true,
 			Options: []string{
 				"A Game of Thrones",
 				"The Wire",
